@@ -9,6 +9,9 @@ import path, {dirname} from 'path';
 import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+//import Router
+import indexRouter from './app/routes/index.route.server.js';
+
 //instantiate app-server
 const app = express();
 
@@ -27,26 +30,8 @@ app.use(session({
     resave: false
 }));
 
-//custom middleware
-function helloWorld(req, res, next){
-    res.setHeader('Content-type', 'text/plain');
-    res.end('Hello from NodeJs Application');
-}
 
-function byeWorld(req, res, next){
-    res.setHeader('Content-type', 'text/html');
-    res.end('<h1>Hello from NodeJs Application as html</h1>');
-}
-
-function sayWorld(req, res, next){
-    res.setHeader('Content-type','application/json');
-    res.end('{“message”: “Hello from NodeJS Application as json”}');
-             
-}
-
-app.use('/html',byeWorld);
-app.use('/json',sayWorld);
-app.use('/',helloWorld);
+app.use('/', indexRouter);
 
 app.listen(3000);
 
