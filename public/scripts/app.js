@@ -1,3 +1,9 @@
+// File Name: app.js
+//Student Name: Eva Fan 
+//StudentID: 301238820
+//Date: October 3, 2022 
+
+// load page function
 
 (function (){
     function Start(){

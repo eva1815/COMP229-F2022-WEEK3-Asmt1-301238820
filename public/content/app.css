@@ -1,3 +1,9 @@
+/* File Name: app.css
+ Student Name: Eva Fan 
+ StudentID: 301238820
+Date: October 3, 2022  */
+
+/* Organize form */
 .post-wrapper{
     display:grid;
     grid-template-columns: repeat(auto-fit, 280px);
@@ -5,31 +11,38 @@
     justify-content: center;
     padding-bottom: 60px;
 }
+/* picture shadow */
 .post{
     border: 1px solid white;
     -webkit-box-shadow:-2px 7px 21px -9px rgba(0,0,0,0.75);
     -moz-box-shadow:-2px 7px 21px -9px rgba(0,0,0,0.75);
     box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
+/* organize picture  */
 .thumbnail{
     display:block;
     width:100%;
     height:180px;
     object-fit: cover;
 }
+
+/* picture background */
 .post-preview{
     background-color: #fff;
     padding: 15px;
 }
+/* title color  */
 .post-title{
     color:black;
     margin: 0;
 }
+
+/* explanation word color and font size */
 .post-intro{
     color: #4b5156;
     font-size: 15px;
 }
-
+/* submit button setting */
 #submit-btn{
     margin-top: 10px;
     width:100%;
@@ -39,7 +52,7 @@
     background-color: black;
     border: none;
 }
-
+/* form */
 #contact-form{
     display: block;
     max-width: 600px;
@@ -50,13 +63,16 @@
     background-color: whitesmoke;
     margin-bottom: 50px;
 }
+/* form setting */
 #contact-form label{
     line-height: 2.7em;
 }
+/* form textarea setting */
 #contact-form textarea{
     min-height: 100px;
     font-size: 14px;
 }
+/* form input area setting */
 .input-field{
     width: 100%;
     padding-top: 10px;
