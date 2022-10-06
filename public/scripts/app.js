@@ -3,7 +3,7 @@
 //StudentID: 301238820
 //Date: October 3, 2022 
 
-// load page function
+// IIFE load page function
 
 (function (){
     function Start(){
